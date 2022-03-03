@@ -1,0 +1,84 @@
+.search {
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input {
+    width: 60%;
+    outline: none;
+    height: 51%;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.search__input:focus {
+    box-shadow: 0px 0px 6px 1px #dfb567;
+}
+
+.search__button {
+    height: 6.7vh;
+    width: 8vw;
+    cursor: pointer;
+    background: linear-gradient(#4dcf79, #56dbd0);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.2rem;
+    transition: all 1s easein;
+}
+
+.search__button:active,
+.search__button:hover {
+    background: linear-gradient( #5fbce7, #23B2EE);
+    transform: scaleY(0.99) scaleX(0.99);
+}
+
+.search__button:active {
+    cursor: progress;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .search__input {
+        height: 5.3vh;
+        font-size: 1.02rem;
+        padding-left: 0.5rem;
+    }
+    .search__button {
+        height: 5.33vh;
+        width: 18vw;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-left: -0.04rem;
+    }
+}
+
+@media (min-width:480px)and (max-width: 768px) {
+    .search__input {
+        height: 5.3vh;
+        font-size: 1.02rem;
+        padding-left: 0.5rem;
+    }
+    .search__button {
+        height: 5.33vh;
+        width: 18vw;
+        font-size: 1.02rem;
+        font-weight: bold;
+        margin-left: -0.04rem;
+    }
+}
+
+@media(min-width:769px) and (max-width: 1024px) {
+    .search__input {
+        height: 5.3vh;
+        font-size: 1.02rem;
+        padding-left: 0.5rem;
+    }
+    .search__button {
+        height: 5.33vh;
+        width: 18vw;
+        font-size: 1.02rem;
+        font-weight: bold;
+        margin-left: -0.04rem;
+    }
+}

@@ -1,0 +1,25 @@
+    .footer {
+        height: 5vh;
+        /* background: linear-gradient(rgb(20rgb(214, 148, 148)1, 141), black); */
+        background: rgb(24, 23, 23);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer p {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+    
+    @media (min-width:320px) {
+        .footer p {
+            font-size: 0.7rem;
+        }
+    }
+    
+    @media (max-width: 768px) {}
+    
+    @media(max-width: 1024px) {}

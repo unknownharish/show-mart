@@ -1,0 +1,135 @@
+ .future {
+     margin-top: 3vh !important;
+     min-height: 43vh;
+     width: 20vw;
+     margin: 12px 6px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 11%;
+     /* outline: 1px solid rgb(241, 146, 108); */
+     background: black;
+     transition: all 0.3s ease-out;
+ }
+ 
+ .future:hover {
+     transform: scale(1.05);
+     /* background: rgb(245, 220, 220); */
+     background: rgb(37, 37, 37);
+     color: black;
+ }
+ 
+ .future_img {
+     height: 19vh;
+     width: 84%;
+     /* margin-top: 1vh; */
+     border-radius: 7%;
+ }
+ 
+ .future_img>img {
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .future p {
+     color: white;
+     display: flex;
+     width: 8vw;
+     padding: 4px;
+     text-align: center;
+     font-size: 11px;
+ }
+ 
+ .future>p>img {
+     height: 87%;
+     width: 16%;
+     margin-right: 5%;
+     filter: invert();
+ }
+ 
+ .future_name {
+     margin-top: 1vh;
+     text-align: center;
+     font-size: 19px !important;
+     width: 100% !important;
+     justify-content: center;
+ }
+ /*     
+    .future img {
+        height: 28%;
+        width: 89%;
+        border-radius: 7%;
+    } */
+ 
+ .future_button {
+     cursor: pointer;
+     /* background: linear-gradient(rgb(148, 245, 148), rgb(109, 233, 109));
+     */
+     background: linear-gradient(rgb(235, 70, 70), rgb(235, 62, 62));
+     outline: none;
+     border: none;
+     height: 4vh;
+     margin-top: 2%;
+     border-radius: 6%;
+     width: 46%;
+     margin-top: 1vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .future_button a {
+     color: black;
+     text-decoration: none;
+ }
+ 
+ .future_button img {
+     width: 15%;
+ }
+ 
+ @media(min-width: 769px) and (max-width: 1024px) {
+     .future {
+         width: 30vw;
+         min-height: 42vh;
+     }
+     .future_button {
+         width: 60%;
+     }
+     .future p {
+         color: white;
+         display: flex;
+         width: 12vw;
+         padding: 5px;
+         text-align: center;
+     }
+     .future_img>img {
+         border-radius: 7%;
+     }
+ }
+ 
+ @media(min-width:481px) and (max-width:769px) {
+     .future {
+         width: 39vw;
+         min-height: 39vh;
+     }
+     .future_button {
+         height: 5vh;
+         width: 51%;
+     }
+ }
+ 
+ @media(min-width:320px) and (max-width:480px) {
+     .future {
+         width: 70vw;
+         height: 42vh !important;
+     }
+     .future_img>img {
+         height: 100%;
+         width: 100%;
+     }
+     .future p {
+         width: 34%;
+         padding: 5px;
+     }
+ }

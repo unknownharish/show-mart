@@ -1,0 +1,42 @@
+.castscreen {
+    height: 20vh;
+    width: 13vw;
+    background-color: #a9d58c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    margin: 8px;
+}
+
+.castscreen img {
+    height: 70%;
+    width: 66%;
+    border-radius: 40px;
+}
+
+.castscreen p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1vh;
+    font-weight: 300;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .castscreen {
+        width: 35vw;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .castscreen {
+        width: 23vw;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .castscreen {
+        width: 18vw;
+    }
+}

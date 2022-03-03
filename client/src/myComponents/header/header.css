@@ -1,0 +1,115 @@
+    .header {
+        min-height: 12vh;
+        /* background-color: rgb(207, 172, 106); */
+        background: linear-gradient( #5fbce7, #23B2EE);
+    }
+    
+    .header__tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        list-style: none;
+        color: black;
+    }
+    
+    .header__tab li img {
+        height: 1.8rem;
+        margin-right: 0.2rem;
+        margin-left: 2px;
+    }
+    
+    #logo {
+        font-size: 1.8rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 500;
+    }
+    
+    #links {
+        min-height: 5vh;
+    }
+    
+    .header__tab li a {
+        text-decoration: none;
+        color: black;
+        margin: 0.2rem 1rem;
+        font-size: 1.2rem;
+        padding: 0.2rem;
+        /* border: 1px solid linear-gradient( #5fbce7, #23B2EE); */
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+    
+    .header__tab li a:hover {
+        border-bottom: 1px solid black;
+    }
+    
+    .header__tab li a img {
+        /* height: 1.5vh; */
+        height: 3vh;
+    }
+    
+    .hamburger {
+        background: linear-gradient(#23B2EE, #7DF9FF);
+        height: 36px;
+        cursor: pointer;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 6px;
+        transition: all 0.3s;
+    }
+    
+    .hamburger:hover {
+        transform: scale(0.95);
+    }
+    
+    #maindiv {
+        margin-top: 10px;
+    }
+    
+    .hamburger>div {
+        background-color: black;
+        height: 2px;
+        width: 21px;
+        margin-top: 3px;
+        margin-left: 8px;
+    }
+    
+    @media (min-width:320px) and (max-width:450px) {
+        .header {
+            min-height: 10vh;
+        }
+        #logo {
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin-left: -1.5rem;
+        }
+        #logo img {
+            height: 1.3rem;
+        }
+        #links {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+    }
+    
+    @media (min-width:451px) and (max-width: 700px) {
+        #links {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+        #logo {
+            margin-left: -0.5rem;
+            font-weight: 500;
+        }
+    }

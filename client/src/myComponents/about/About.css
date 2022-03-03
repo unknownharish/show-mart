@@ -1,0 +1,431 @@
+ .about {
+     justify-content: center;
+     min-height: 83vh;
+     width: 100vw;
+     /* background: linear-gradient(rgba(82, 224, 217, 0.322), rgba(54, 206, 105, 0.753)); */
+ }
+ 
+ .about::before {
+     content: '';
+     height: 71vh;
+     width: 100vw;
+     background: url('../images/aboutus.jpeg') no-repeat;
+     background-size: cover;
+     display: block;
+     opacity: 0.9;
+     z-index: 1;
+ }
+ 
+ .about_heading {
+     left: 30%;
+     position: absolute;
+     top: 9.5rem;
+     height: 8vh;
+     width: 39vw;
+     background-color: rgb(148, 187, 183);
+     animation: blink 0.3s ease-in-out infinite alternate, short 2.5s steps(40) infinite alternate;
+     overflow: hidden;
+     white-space: nowrap;
+     opacity: 0.7;
+ }
+ 
+ @keyframes blink {
+     0% {
+         border-right: 2px solid black;
+     }
+     100% {
+         border-right: 2px solid linear-gradient(rgba(82, 224, 217, 0.322), rgba(54, 206, 105, 0.753));
+     }
+ }
+ 
+ @keyframes short {
+     100% {
+         width: 0.5vw;
+     }
+ }
+ 
+ .about_text {
+     margin-top: 15px;
+     margin-left: 15%;
+ }
+ 
+ .about_text::before {
+     content: "";
+     font-weight: 950;
+     font-size: 24px;
+     animation: setText 8s ease-in alternate infinite;
+ }
+ 
+ @keyframes setText {
+     0% {
+         content: "Let's know about the creator...!";
+     }
+     50% {
+         content: "It is developed by Harish";
+     }
+     100% {
+         content: "This application is based on React";
+     }
+ }
+ 
+ .profile {
+     margin-top: 9vh;
+     margin-bottom: 2vh;
+     width: 61vw;
+     margin: auto;
+     /* display: flex;
+    justify-content: center;
+    align-items: center; */
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     place-items: center;
+ }
+ 
+ .grid_item {
+     margin: 15px;
+ }
+ 
+ .profile_education {
+     height: 48vh;
+     width: 24vw;
+     /* margin: 0 13px; */
+     background: rgb(235, 216, 166);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .profile_education h2 {
+     text-align: center;
+     margin: 10px 0;
+ }
+ 
+ .profile_education h2::after {
+     content: '';
+     display: block;
+     height: 2px;
+     width: 27%;
+     background: green;
+     margin-left: 37%;
+     margin-top: 1%;
+ }
+ 
+ .education_h3 {
+     margin: 6px 13px;
+     font-size: 1.02rem;
+     font-weight: 400;
+ }
+ 
+ .education {
+     height: 68%;
+     margin: auto;
+ }
+ 
+ .education p {
+     margin-left: 2rem;
+     font-size: 13px;
+     padding: 2px;
+ }
+ 
+ .profile_info {
+     height: 48vh;
+     width: 24vw;
+     /* margin: 0 13px; */
+     background: rgb(188, 188, 231);
+ }
+ 
+ .profile_info h2 {
+     text-align: center;
+     margin: 10px 0;
+     font-weight: 400;
+ }
+ 
+ .profile_info h2::after {
+     content: '';
+     display: block;
+     height: 2px;
+     width: 27%;
+     background: rgb(227, 82, 191);
+     margin-left: 37%;
+     margin-top: 1%;
+ }
+ 
+ .info_image {
+     height: 2rem;
+     width: 2.5rem;
+     padding-top: 0.8rem;
+ }
+ 
+ .profile_info p {
+     letter-spacing: 0.02rem;
+     margin-top: 3rem;
+     font-size: 1.1rem;
+     padding: 20px;
+     font-size: 14px;
+     font-weight: 300;
+ }
+ 
+ .profile_contact {
+     height: 48vh;
+     width: 24vw;
+     /* margin: 0 13px; */
+     background: rgb(236, 218, 203);
+ }
+ 
+ .profile_contact h2 {
+     text-align: center;
+     margin: 10px 0;
+     font-weight: 400;
+ }
+ 
+ .profile_contact h2::after {
+     content: '';
+     display: block;
+     height: 2px;
+     width: 23%;
+     background: rgb(72, 62, 145);
+     margin-left: 39%;
+     margin-top: 1%;
+ }
+ 
+ .contact_details {
+     height: 73%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 94%;
+ }
+ 
+ .contact_details p {
+     margin-top: 1rem;
+     font-size: 1.01rem;
+     margin-left: 35px;
+ }
+ 
+ .contact_details p a {
+     text-decoration: none;
+     margin-left: 8%;
+     color: black;
+     font-weight: 300;
+ }
+ 
+ .profile_tech {
+     height: 48vh;
+     width: 24vw;
+     /* margin-left: 13px; */
+     margin-right: 17px;
+     background: darkkhaki;
+ }
+ 
+ .profile_tech h2 {
+     text-align: center;
+     margin: 10px 0;
+     font-weight: 400;
+ }
+ 
+ .profile_tech h2::after {
+     content: '';
+     display: block;
+     height: 2px;
+     width: 23%;
+     background: rgba(34, 123, 102, 0.68);
+     margin-left: 39%;
+     margin-top: 1%;
+ }
+ 
+ .profile_tech p {
+     margin-top: 1rem;
+     font-size: 1.01rem;
+     margin-left: 35px;
+     font-weight: 300;
+ }
+ 
+ .profile_tech ul li {
+     list-style: none;
+ }
+ 
+ .profile_tech ul {
+     height: 79%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+ }
+ 
+ @media (min-width:320px) and (max-width:480px) {
+     .profile {
+         place-items: center;
+         grid-template-columns: repeat(1, 1fr);
+         margin-top: 11vh;
+         width: 100vw;
+     }
+     .profile_education {
+         width: 88vw;
+         margin-top: 1rem;
+         height: 45vh;
+         padding: 2px;
+     }
+     .profile_education h2 {
+         font-size: 20px;
+     }
+     .education_h3 {
+         font-size: 0.9rem;
+     }
+     .profile_info {
+         width: 88vw;
+         margin-top: 1rem;
+         height: 43vh;
+         padding: 5px;
+     }
+     .profile_info p {
+         font-size: 0.9rem;
+         font-weight: 300;
+         letter-spacing: 0.02rem;
+     }
+     .profile_info h2 {
+         font-size: 0.9rem;
+     }
+     .profile_contact {
+         width: 88vw;
+         margin-top: 1rem;
+         height: 43vh;
+     }
+     .profile_contact h2 {
+         font-size: 1.02rem;
+         font-weight: 500;
+     }
+     .contact_details p {
+         font-size: 0.9rem;
+         font-weight: 300;
+     }
+     .profile_tech {
+         width: 88vw;
+         height: 44vh;
+         margin-top: 1rem;
+         margin-right: 0;
+         margin-bottom: 0.5rem;
+     }
+     .profile_tech h2 {
+         font-size: 1rem;
+         font-weight: 500;
+         margin-bottom: 3vh;
+         margin-top: 3vh;
+     }
+     .profile_tech p {
+         font-size: 0.9rem;
+         font-weight: 300;
+     }
+     .about::before {
+         content: '';
+         height: 20vh;
+         /* background-size: contain; */
+         z-index: 1;
+         position: relative;
+     }
+     .about_heading {
+         left: 9%;
+         width: 84vw;
+         z-index: 2;
+         height: 7vh;
+         /* top: 16.5rem; */
+         top: 32.5vh;
+     }
+     .about_text {
+         text-align: center;
+     }
+     .about_text::before {
+         font-size: 16px;
+     }
+ }
+ 
+ @media (min-width:481px) and (max-width:729px) {
+     .profile {
+         grid-template-rows: repeat(1, 1fr);
+     }
+     .profile_education {
+         height: 41vh !important;
+     }
+     .profile_info {
+         height: 41vh !important;
+     }
+     .grid_item {
+         margin: 3px;
+         font-weight: 300;
+     }
+     .education_h3 {
+         font-size: 0.9rem;
+     }
+     .contact_details p {
+         font-size: 0.8rem !important;
+     }
+     .profile_contact {
+         height: 41vh !important;
+     }
+     .profile_tech {
+         height: 41vh !important;
+         margin-left: 0px !important;
+     }
+ }
+ 
+ @media (min-width:481px) and (max-width:1024px) {
+     .about::before {
+         content: '';
+         height: 31vh;
+     }
+     .about_heading {
+         left: 30%;
+         position: absolute;
+         top: 23.5rem;
+     }
+     .about_heading {
+         left: 9%;
+         width: 84vw;
+         z-index: 2;
+         height: 7vh;
+     }
+     .about_text::before {
+         font-size: 19px;
+     }
+     .profile {
+         margin-top: 12vh;
+         min-height: 28vw;
+         width: 100vw;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         place-items: center;
+     }
+     .profile_education {
+         height: 51vh;
+         width: 46vw;
+         margin-left: 0.5rem;
+     }
+     .profile_education h2 {
+         font-weight: 500;
+     }
+     .profile_info {
+         height: 51vh;
+         width: 46vw;
+         /* margin-left: -21px; */
+     }
+     .profile_contact {
+         height: 45vh;
+         width: 46vw;
+         margin-left: 8px;
+     }
+     .contact_details p {
+         margin-top: 1rem;
+         font-size: 0.9rem;
+         font-weight: 800;
+         margin-left: 20px;
+     }
+     .profile_tech {
+         height: 45vh;
+         width: 46vw;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+         margin-left: 17px;
+     }
+     .education {
+         margin-top: 0.3rem;
+     }
+ }
