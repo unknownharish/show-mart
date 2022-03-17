@@ -262,7 +262,7 @@
      .profile_education {
          width: 88vw;
          margin-top: 1rem;
-         height: 45vh;
+         height: 47vh;
          padding: 2px;
      }
      .profile_education h2 {
@@ -338,15 +338,21 @@
      }
  }
  
- @media (min-width:481px) and (max-width:729px) {
+ @media (min-width:481px) and (max-width:768px) {
      .profile {
          grid-template-rows: repeat(1, 1fr);
+         width: 100vw;
+         place-items: center;
      }
      .profile_education {
-         height: 41vh !important;
+         height: 46vh;
+         width: 47vw;
+         margin: 5px;
      }
      .profile_info {
-         height: 41vh !important;
+         height: 46vh;
+         width: 47vw;
+         margin: 5px;
      }
      .grid_item {
          margin: 3px;
@@ -356,18 +362,21 @@
          font-size: 0.9rem;
      }
      .contact_details p {
-         font-size: 0.8rem !important;
+         font-size: 0.8rem;
      }
      .profile_contact {
-         height: 41vh !important;
+         height: 46vh;
+         width: 47vw;
+         margin: 5px;
      }
      .profile_tech {
-         height: 41vh !important;
-         margin-left: 0px !important;
+         height: 46vh;
+         width: 47vw;
+         margin: 5px;
      }
  }
  
- @media (min-width:481px) and (max-width:1024px) {
+ @media (min-width:769px) and (max-width:1024px) {
      .about::before {
          content: '';
          height: 31vh;
